@@ -21,7 +21,12 @@ function Home()
   //    .catch(err => console.error("Loading Error:", err));
   //}, []);
 
+  useEffect(()=>{
+
   setCities(citiesdata.List)
+
+  },[])
+
 
 
 // Checking city data is loaded
