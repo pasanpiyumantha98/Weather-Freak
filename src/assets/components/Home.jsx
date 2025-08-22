@@ -21,7 +21,7 @@ function Home()
   }, []);
 
 
-// Checking city data is loaded
+// Checking city data is loading
     useEffect(()=>{
     if (cities) {
       console.log(cities);
