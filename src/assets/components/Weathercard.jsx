@@ -7,6 +7,7 @@ import rain from "../images/rain.png"
 function WeatherCard({city})
 {
 
+  // Setting color for cards based on tempreture
   let color;
 
   if(city?.main.temp>30)
@@ -28,6 +29,7 @@ function WeatherCard({city})
      color="#9cee49ff";
   }
 
+// Setting icons for cards based on weather
 let imgtype
 
 if(city?.weather[0].main==="Clear")
