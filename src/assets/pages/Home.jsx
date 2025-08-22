@@ -2,7 +2,7 @@ import WeatherCard from "../components/Weathercard"
 import { useState,useEffect } from "react";
 import "../css/custom.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer1 from "../components/Footer1";
+import Footer1 from "../components/Footer";
 import LogoutButton from "../components/LogoutButton";
 import logo1 from "../images/logo1.png";
 
@@ -14,7 +14,7 @@ function Home()
 
 //file reading
     useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}cities.json`)
+    fetch("../cities.json")   
       .then(res => res.json())
       .then(json => setCities(json.List))
       .catch(err => console.error("Loading Error:", err));
