@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer1 from "../components/Footer";
 import LogoutButton from "../components/LogoutButton";
 import logo1 from "../images/logo1.png";
+import cities from "../files/cities.json"
 
 function Home()
 {
@@ -13,12 +14,14 @@ function Home()
     const [weather,setWeather] = useState([]);
 
 //file reading
-    useEffect(() => {
-    fetch("../cities.json")   
-      .then(res => res.json())
-      .then(json => setCities(json.List))
-      .catch(err => console.error("Loading Error:", err));
-  }, []);
+  //  useEffect(() => {
+  //  fetch("../cities.json")   
+  //    .then(res => res.json())
+  //    .then(json => setCities(json.List))
+  //    .catch(err => console.error("Loading Error:", err));
+  //}, []);
+
+  setCities(cities.List)
 
 
 // Checking city data is loaded
