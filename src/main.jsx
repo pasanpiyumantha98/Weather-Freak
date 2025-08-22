@@ -14,7 +14,9 @@ const id = import.meta.env.VITE_AUTH0_CLIENT_ID;
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <Auth0Provider domain={domain} clientId={id} redirectUri={`${window.location.origin}/home`} >
+  <Auth0Provider domain={domain} clientId={id} authorizationParams={{
+    redirect_uri: window.location.origin + "/home"
+  }} >
   <BrowserRouter>
   <Routes>
 
