@@ -12,7 +12,7 @@ Weather Freak is a modern weather forecasting app built with React. It provides 
 🔐 Auth0 integration for secure login and user-based access
 🛠️ Tech Stack
 
-Frontend: React, JavaScript, Bootstrap, CSS
+Frontend: React, JavaScript, Bootstrap, CSS <br>
 API: OpenWeatherMap API
 Auth: Auth0 (for authentication & protected routes)
 Hosting: Vercel
