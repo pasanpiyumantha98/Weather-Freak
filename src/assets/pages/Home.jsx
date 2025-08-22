@@ -13,6 +13,8 @@ function Home()
     const [cities,setCities] = useState([]);
     const [weather,setWeather] = useState([]);
 
+    
+
 //file reading
   //  useEffect(() => {
   //  fetch("../cities.json")   
@@ -42,7 +44,8 @@ function Home()
    useEffect(() => {
   if (cities.length === 0) return;
 
-  const API_KEY = "263dac9b4504884ba9de0fa66682c8fc";
+  const API_KEY = import.meta.env.VITE_WEATHER_ID;
+
 
   const cachedData = localStorage.getItem("CachedD");
   const cachedTime = localStorage.getItem("CachedT");
