@@ -14,7 +14,7 @@ function Home()
 
 //file reading
     useEffect(() => {
-    fetch("./cities.json")   
+    fetch(`${import.meta.env.BASE_URL}cities.json`)
       .then(res => res.json())
       .then(json => setCities(json.List))
       .catch(err => console.error("Loading Error:", err));
